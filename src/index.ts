@@ -1,3 +1,4 @@
-import Template from './Template';
+import 'dotenv/config';
+import { main } from './app';
 
-export default Template;
+main().catch((err) => console.error('🔴 main error', err))
